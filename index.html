@@ -2,18 +2,238 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-adsense-account" content="ca-pub-4752698416622962" />
-    <title>Azzuriva</title>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4752698416622962"
-      crossorigin="anonymous"
-    ></script>
+    <title>Azzuriva - Riviera route search</title>
+    <meta
+      name="description"
+      content="Azzuriva is an independent Riviera mobility companion that links to a route-search app for checking direct Riviera Trasporti bus trips from the official timetable PDF."
+    />
+    <link rel="canonical" href="https://pualien.github.io/" />
+    <meta property="og:title" content="Azzuriva - Riviera route search" />
+    <meta
+      property="og:description"
+      content="Independent entry point for Azzuriva, a route-search app for direct Riviera Trasporti bus trips and practical local mobility information."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pualien.github.io/" />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f1ea;
+        --panel: #fffbf7;
+        --text: #1d1a17;
+        --muted: #6b6258;
+        --accent: #d93b4f;
+        --line: rgba(62, 39, 24, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(180deg, #f7f1ea 0%, #efe4d6 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+
+      .hero,
+      .section {
+        background: rgba(255, 251, 247, 0.86);
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        border-radius: 26px;
+        box-shadow: 0 30px 60px rgba(93, 63, 35, 0.12);
+      }
+
+      .hero {
+        padding: clamp(28px, 6vw, 54px);
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        line-height: 1.08;
+      }
+
+      h1 {
+        max-width: 760px;
+        font-size: clamp(2.2rem, 7vw, 4.6rem);
+      }
+
+      h2 {
+        font-size: clamp(1.5rem, 3vw, 2.1rem);
+      }
+
+      p {
+        max-width: 720px;
+      }
+
+      .lead {
+        color: var(--muted);
+        font-size: 1.12rem;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      a {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 18px;
+        border-radius: 18px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .button-secondary {
+        background: #fff;
+        color: var(--accent);
+        border: 1px solid var(--line);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 22px;
+      }
+
+      .section {
+        margin-top: 18px;
+        padding: 24px;
+      }
+
+      .feature {
+        min-height: 100%;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.68);
+      }
+
+      .feature h3 {
+        margin: 0 0 8px;
+        font-size: 1rem;
+      }
+
+      .feature p,
+      .note {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 760px) {
+        main {
+          width: min(100% - 20px, 960px);
+          padding: 24px 0;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Azzuriva</h1>
-    <p>
-      <a href="/riviera-trasporti-schedules/">Open Azzuriva route search</a>
-    </p>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Independent Riviera mobility companion</p>
+        <h1>Azzuriva helps riders find direct Riviera bus routes faster.</h1>
+        <p class="lead">
+          Azzuriva is an independent entry point for a public route-search app focused on
+          Riviera Trasporti timetable data. The app turns the official PDF timetable into a
+          route-first experience for towns such as Imperia, Sanremo, Ventimiglia, Andora,
+          Albenga, and nearby Riviera localities.
+        </p>
+        <div class="actions" aria-label="Azzuriva actions">
+          <a class="button" href="/riviera-trasporti-schedules/">Open the route search app</a>
+          <a class="button button-secondary" href="/riviera-trasporti-schedules/ads.txt">View project ads.txt</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>What the app provides</h2>
+        <div class="grid">
+          <article class="feature">
+            <h3>Direct route lookup</h3>
+            <p>
+              Search an origin and destination, then review direct departures by day type
+              without manually scanning the full timetable PDF.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Official-source context</h3>
+            <p>
+              Results point back to the official Riviera Trasporti source so riders can
+              verify service details before travelling.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Practical fallbacks</h3>
+            <p>
+              When a direct bus is not available, Azzuriva keeps useful local mobility
+              context nearby, including verified taxi contacts where available.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Advertising policy for this root page</h2>
+        <p>
+          This root page is a non-monetized directory for the Azzuriva project and the
+          publisher verification file. Google ads are not requested here. If advertising is
+          enabled, it is requested from the route-search application at
+          <a href="/riviera-trasporti-schedules/">pualien.github.io/riviera-trasporti-schedules/</a>,
+          where the publisher content and user workflow live.
+        </p>
+        <p class="note">
+          Azzuriva is independent and is not the official Riviera Trasporti website.
+        </p>
+      </section>
+
+      <footer>
+        <p>
+          Publisher root for Azzuriva. For the app, open
+          <a href="/riviera-trasporti-schedules/">the route search experience</a>.
+        </p>
+      </footer>
+    </main>
   </body>
 </html>
